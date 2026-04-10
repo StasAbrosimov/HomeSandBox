@@ -24,7 +24,8 @@ UAC.ShellExecute - windows function for execution call
 
 - "cmd" - we call cmd.exe;
 
-- \"/c \"\"\"\"%\~f0\"\" \"\"%\~1\"\" \_\_elevated\_\_\"\"\" - parameters for cmd.exe. It is string whits inner quotes. /c - Carries out the command specified by string and then terminates. Next is the **command** in double quotes (that the way of vbs escapes characters): """"full path to original .bat file"" ""net interface name"" \_\_flag that is admin rights start\_\_""";
+- \"/c \"\"\"\"%\~f0\"\" \"\"%\~1\"\" \_\_elevated\_\_\"\"\" - parameters for cmd.exe. It is string whits inner quotes. /c - Carries out the command specified by string and then terminates. Next is the **command** in double quotes (that the way of vbs escapes characters):
+  """"full path to original .bat file"" ""net interface name"" \_\_flag that is admin rights start\_\_""";
 
 - "" - working directory. It will be default for this case "%SystemRoot%\System32";
 

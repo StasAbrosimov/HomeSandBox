@@ -1,4 +1,4 @@
-echo off
-cls
+@echo off
+echo.
 pps -cs
 pause

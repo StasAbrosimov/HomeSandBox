@@ -18,7 +18,7 @@ usage:
 
 Explane of next code line
 
-> echo UAC.ShellExecute "cmd", "/c """"%~f0"" ""%~1"" __elevated__""", "", "runas", 1 >> "%temp%\NetworkAdapterRestart_getadmin.vbs"
+> echo UAC.ShellExecute "cmd", "/c """"%~f0"" ""%~1"" \_\_elevated\_\_""", "", "runas", 1 >> "%temp%\NetworkAdapterRestart_getadmin.vbs"
 
 UAC.ShellExecute - windows function for execution call
 

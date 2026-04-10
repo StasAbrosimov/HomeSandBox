@@ -14,7 +14,7 @@ usage:
 
 > **NetworkAdapterRestart %Name_OF_Target_Interface%**
 
-***Need to "Run as Administrator***, but if you forget this nuance the script will check it and start again with higher privileges. 
+***Need to "Run as Administrator"***, but if you forget this nuance the script will check it and start again with higher privileges. 
 
 Explane of next code line
 

@@ -16,6 +16,22 @@ usage:
 
 ***Need to "Run as Administrator***, but if you forget this nuance the script will check it and start again with higher privileges. 
 
+Explane of next code line
+
+> echo UAC.ShellExecute "cmd", "/c """"%~f0"" ""%~1"" __elevated__""", "", "runas", 1 >> "%temp%\NetworkAdapterRestart_getadmin.vbs"
+
+UAC.ShellExecute - windows function for execution call
+
+- "cmd" - we call cmd.exe;
+
+- \"/c \"\"\"\"%\~f0\"\" \"\"%\~1\"\" \_\_elevated\_\_\"\"\" - parameters for cmd.exe. It is string whits inner quotes. /c - Carries out the command specified by string and then terminates. Next is the **command** in double quotes (that tha way of vbs escapes characters): """"full path to original .bat file"" ""net interface name"" \_\_flag that is admin rights start\_\_""";
+
+- "" - working directory. It will be default for this case "%SystemRoot%\System32";
+
+- "runas" - The action to perform. In this case is "runas" - Launches the app as Administrator;
+
+- 1 - windowStyle. in our case is Normal window
+
 ## Currency_From_NBU.ps1
 
 PowerShell script for obtaining exchange rates for different currencies on today's date.
